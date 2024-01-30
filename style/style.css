@@ -1,0 +1,165 @@
+/* shared style */
+* {
+    font-family: 'Mulish', sans-serif;
+}
+
+.section-title {
+    display: flex;
+    gap: 5px;
+}
+
+.Travel-resort {
+    color: #131318;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.Resorts {
+    color: #FF5400;
+}
+
+nav {
+    display: flex;
+    margin-left: 50%;
+}
+
+nav>ul {
+    display: flex;
+    gap: 1rem;
+
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424247;
+    font-size: .5rem;
+    font-weight: 400;
+}
+
+.banner-img {
+    width: 100%;
+    height: 400px;
+    border: 1px solid b;
+    border-radius: 16px;
+}
+
+.banner-section {
+    margin-top: 10px;
+}
+
+.banner-title {
+    margin-top: -32%;
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#resort {
+    padding-left: 250px;
+}
+
+.banner-description {
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0 200px;
+    margin-top: -40px;
+    padding-top: 40px;
+}
+
+.input-section {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    gap: 24px;
+    padding-top: 50px;
+}
+
+.input-section>.input {
+    background: #42424772;
+    border-radius: 8px;
+    padding-left: 20%;
+}
+
+.input input {
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.primary-btn {
+    width: 130px;
+    height: 30px;
+    border: 0;
+    border-radius: 8px;
+    background: #FF5400;
+}
+
+.primary-btn>.Find-Now {
+    color: #FFF;
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.input-section img {
+    width: 18.001px;
+    height: 18.001px;
+    margin-left: -13%;
+}
+
+
+/* mobile device */
+@media screen and (max-width:576px) {
+    .section-title,
+    nav,
+    nav>ul,
+    .input-section {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-left: auto;
+    }
+
+    nav>ul {
+        margin-left: -350%;
+    }
+
+    .section-title {
+        img {
+            width: 50px;
+        }
+    }
+
+    .banner-title {
+        margin-top: -90%;
+        color: #FFF;
+        padding-left: -25px;
+        font-size: 15px;
+    }
+
+    .banner-description {
+        margin-top: -30px;
+        padding: 20px 78px;
+    }
+
+    #resort {
+        padding-left: 0;
+    }
+
+    .input-section {
+        padding-top: 0;
+        
+    }
+    .primary-btn {
+        width: 155px;
+       margin-left: 10px;
+    }
+}
